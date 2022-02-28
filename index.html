@@ -36,6 +36,10 @@
 </head>
 
 <body class="u-body">
+	<!--CSS Spinner-->
+<div class="spinner-wrapper">
+	<div class="spinner"></div>
+	</div>
 	<!-- Start header -->
 	<header class="top-navbar" >
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -346,7 +350,7 @@
 						<div class="our-team">
 							<img src="img/vjencanje.jpg">
 							<div class="team-content">
-								<h3 class="title">Torte za Vjenčanja</h3>
+								<a href="torte-za-vjencanja.html"><h3 class="title">Torte za Vjenčanja</h3></a>
 								<span class="post"></span>
 								
 							</div>
@@ -357,7 +361,7 @@
 						<div class="our-team">
 							<img src="img/krstenje.jpg">
 							<div class="team-content">
-								<h3 class="title">Torte za Krštenja</h3>
+								<a href="torte-za-krstenja.html"><h3 class="title">Torte za Krštenja</h3></a>
 								<span class="post"></span>
 								
 							</div>
@@ -368,7 +372,7 @@
 						<div class="our-team">
 							<img src="img/krstenje.jpg">
 							<div class="team-content">
-								<h3 class="title">Torte za Pričest <br> i Krizmu</h3>
+								<a href="torte-za-pricest-i-krizmu.html"><h3 class="title">Torte za Pričest <br> i Krizmu</h3></a>
 								<span class="post"></span>
 								
 							</div>
@@ -380,8 +384,8 @@
 						<div class="our-team">
 							<img src="img/djevojcice.jpg">
 							<div class="team-content">
-								<h3 class="title">Rođendanske Torte</h3>
-								<span class="post">Djevojčice</span>
+								<a href="rodendan-djevojcice.html"><h3 class="title">Rođendanske Torte</h3>
+								<span class="post">Djevojčice</span></a>
 								
 							</div>
 						</div>
@@ -391,8 +395,8 @@
 						<div class="our-team">
 							<img src="img/djecaci.jpg">
 							<div class="team-content">
-								<h3 class="title">Rođendanske Torte</h3>
-								<span class="post">Dječaci</span>
+								<a href="rodendan-djecaci.html"><h3 class="title">Rođendanske Torte</h3>
+								<span class="post">Dječaci</span></a>
 								
 							</div>
 						</div>
@@ -402,8 +406,8 @@
 						<div class="our-team">
 							<img src="img/odrasli.jpg">
 							<div class="team-content">
-								<h3 class="title">Rođendanske Torte</h3>
-								<span class="post">Odrasli</span>
+								<a href="rodendan-odrasli.html"><h3 class="title">Rođendanske Torte</h3>
+								<span class="post">Odrasli</span></a>
 								
 							</div>
 						</div>
@@ -414,8 +418,8 @@
 						<div class="our-team">
 							<img src="img/svecane.jpg">
 							<div class="team-content">
-								<h3 class="title">Svečane Torte</h3>
-								<span class="post"></span>
+								<a href="svecane-torte.html"><h3 class="title">Svečane Torte</h3>
+								<span class="post"></span></a>
 								
 							</div>
 						</div>
@@ -425,7 +429,7 @@
 						<div class="our-team">
 							<img src="img/fugarfree.jpg">
 							<div class="team-content">
-								<h3 class="title">Sugar Free Torte</h3>
+								<a href="sugarfree-torte.html"><h3 class="title">Sugar Free Torte</h3></a>
 								<span class="post"></span>
 								
 							</div>
@@ -436,7 +440,7 @@
 						<div class="our-team">
 							<img src="img/18+.jpg">
 							<div class="team-content">
-								<h3 class="title">18+ Torte</h3>
+								<a href="18-torte.html"><h3 class="title">18+ Torte</h3></a>
 								<span class="post"></span>
 								
 							</div>
@@ -448,7 +452,7 @@
 						<div class="our-team">
 							<img src="img/dnevni.jpg">
 							<div class="team-content">
-								<h3 class="title">Dnevni Kolači</h3>
+								<a href="dnevni-kolaci.html"><h3 class="title">Dnevni Kolači</h3></a>
 								<span class="post"></span>
 								
 							</div>
@@ -459,7 +463,7 @@
 						<div class="our-team">
 							<img src="img/svecanikolaci.jpg">
 							<div class="team-content">
-								<h3 class="title">Svečani Kolači</h3>
+								<a href="svecani-kolaci.html"><h3 class="title">Svečani Kolači</h3></a>
 								<span class="post"></span>
 								
 							</div>
@@ -470,7 +474,7 @@
 						<div class="our-team">
 							<img src="img/suhi.jpeg">
 							<div class="team-content">
-								<h3 class="title">Suhi Kolači</h3>
+								<a href="keksi.html"><h3 class="title">Suhi Kolači</h3></a>
 								<span class="post"></span>
 								
 							</div>
@@ -511,7 +515,7 @@
 			  <div class="columns-cjenik">
 				<ul class="price-cjenik">
 				  <li class="header">Oblici</li>
-				  <li>Srce ili Barby</li>
+				  <li>Srce ili Barbie</li>
 				  <li>Lopta ili Vlak</li>
 				  <li>Pas ili Mačka</li>
 				  <li>i mnogi drugi...</li>
@@ -775,6 +779,18 @@
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
 
+	<script>
+		$(document).ready(function() {
+		//Preloader
+		preloaderFadeOutTime = 2500;
+		function hidePreloader() {
+		var preloader = $('.spinner-wrapper');
+		preloader.fadeOut(preloaderFadeOutTime);
+		}
+		hidePreloader();
+		});
+		</script>
+
 	<style>
 		.row-ponuda{
 			margin-bottom: 25px;
@@ -782,6 +798,46 @@
 
 		@media only screen and (max-width: 990px){
         .row-ponuda{ margin-bottom: 5px; }
+}
+
+.spinner-wrapper {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #d0a772;
+z-index: 999999;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+  position: absolute;
+  top: 48%;
+  left: 48%;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
 }
 
 	</style>
